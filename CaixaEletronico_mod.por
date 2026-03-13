@@ -59,7 +59,7 @@ programa
     escreva("Digite a senha: ")
     leia(senha)
     se(senha==3589){
-	  escreva("Pagamento pix: -920,00\n", "Recebimento pix: +4.223,00\n", "Compra efetuada em VIVARA: -5.478,00\n", "Compra efetuada em ASSAI MERCADOS LTDA: -3.456,00\n", "Recebmento pix: +10.552,78\n")
+	  escreva("Pagamento pix: -920,00\n", "Recebimento pix: +4.223,00\n", "Compra efetuada em VIVARA: -5.478,00\n", "Compra efetuada em ASSAI MERCADOS LTDA: -3.456,00\n", "Recebimento pix: +10.552,78\n")
 	  Menu()}
     senao{
     escreva("Senha incorreta. Tente novamente. ")
