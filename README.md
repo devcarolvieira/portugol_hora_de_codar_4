@@ -1,26 +1,23 @@
-Exercício de lógica de programação 4
-Fazer melhorias no framework de caixa eletrônico
+# 🏦 Simulador de Caixa Eletrônico (ATM)
 
-1- Ao acessar o sistema, pergunte o nome do usuário e diga "Olá {Nome} é um prazer ter você por aqui!"
+Este projeto simula as operações essenciais de um sistema bancário, focando em segurança, validações de saldo e integridade de transações.
 
-2- Na função "inicio", utilize escolha/caso (switch/case) ou when (quando), se possível, para validar a opção escolhida pelo usuário.
+## 📋 Melhorias e Funcionalidades
+* **Autenticação de Segurança:** Acesso protegido por senha (`3589`) para todas as operações críticas (saldo, saque, extrato e transferência).
+* **Gestão de Saldo:** * Bloqueio de saques e transferências superiores ao saldo disponível.
+    * Impedimento de transações com valores nulos ou negativos.
+* **Extrato Bancário:** Visualização de histórico fictício de movimentações.
+* **Transferências:** Validação de número de conta (apenas caracteres numéricos) e controle de fluxo financeiro.
+* **Interface Interativa:** * Saudação personalizada com o nome do utilizador.
+    * Menu principal estruturado com `when` (switch/case) para melhor organização.
+    * Sistema de erro atualizado para guiar o utilizador.
 
-3- Sempre que o usuário for sacar dinheiro, o valor restante não pode ser negativo, ou seja, caso o usuário tente sacar mais do que tem em saldo, a ação não deve ocorrer. Exiba uma mensagem de "Operação não autorizada".
+## 🛠️ Conceitos Técnicos
+* **Segurança Lógica:** Validação condicional de credenciais antes da execução de métodos.
+* **Regras de Negócio:** Implementação de travas de segurança para evitar saldos negativos.
+* **Recursividade:** Chamada de funções de validação em caso de senha incorreta para manter o fluxo do sistema.
+* **Tratamento de Dados:** Filtros para garantir que depósitos e transferências sejam valores positivos.
 
-4- Sempre que o usuário for sacar dinheiro, o valor a ser sacado não pode ser igual ou menor que zero. Exiba uma mensagem de "Operação não autorizada".
-
-5- Adicionar a opção para ver o extrato (coloque algumas compras ou depósitos fictícios).
-
-6- Adicionar a opção para fazer uma transferência. A transferência consiste em você informar o número de uma conta (pode ser qualquer número, mas obrigatoriamente um número, ou seja, nenhum outro caractere deve ser aceito), perguntar o valor da transferência e remover o valor da conta da mesma forma como na ação do saldo. Caso o usuário tente transferir mais do que tem em saldo, a ação não deve ocorrer. Exiba uma mensagem de "Operação não autorizada".
-
-7- Sempre que o usuário for transferir dinheiro,  o valor a ser transferido não pode ser igual ou menor que zero, ou seja, caso o usuário tente transferir mais do que tem em saldo, a ação não deve ocorrer. Exiba uma mensagem de "Operação não autorizada".
-
-9- Atualize a função "erro" com as novas opções do menu.
-
-10- Caso o usuário informe um valor para depósito igual ou menor que zero, não deixe a operação ocorrer. Exiba uma mensagem de "Operação não autorizada".
-
-11- Sempre que o usuário for acessar o saldo, sacar, retirar o extrato ou transferir dinheiro é necessário que ele informe uma senha. Essa senha deve ser validada com uma condicional. A senha é 3589.
-
-12- Caso a senha informada não seja a correta, é necessário chamar a função atual novamente. 
-
-13- Quando o usuário escolher sair do sistema, exiba uma mensagem agradecendo por utilizar os serviços do banco: "{Nome}, foi um prazer ter você por aqui!".
+## 🚀 Tecnologias
+* **Linguagem:** Kotlin
+* **Paradigma:** Imperativo / Estruturado
